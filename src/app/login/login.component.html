@@ -1,0 +1,38 @@
+<div class="container bg-dark text-center">
+    <div class="row">
+        <div class="col-sm-4 p-5">
+            <img src="https://dcstatic.com/images/brandcrowd/logos/brandcrowd-logo-5d59400c52.svg" alt="">
+             <br>
+             <br>
+             <img src="https://uppercanadaheritagemeat.ca/wp-content/uploads/2020/09/pexels-photo-1509428.jpeg" alt=""  style="height: 350px;" width="300px">
+                        <br>
+                        <br>
+                          <a href="" class="text-right">Create an account?</a>
+        </div>
+
+        <div class="col-sm-8 p-5">
+          <div>
+            <form #ref="ngForm" (ngSubmit)="doLogin(ref)">
+                <p class="display-4 text-dark d-block bg-warning p-2">User Login</p>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Enter username" ngModel>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ngModel>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-white" for="exampleCheck1">Remember</label>
+                  <small id="emailHelp" class="form-text text-danger">We'll never share your credientails with anyone else.</small>
+
+                </div> 
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+         
+    </div>
+</div>
