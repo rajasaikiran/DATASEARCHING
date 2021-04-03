@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginService} from '../login.service';
+import { LoginService} from '../login.service';
 import { TestService} from '../test.service'
+ 
 
 @Component({
   selector: 'app-carrers',
@@ -8,6 +9,7 @@ import { TestService} from '../test.service'
   styleUrls: ['./carrers.component.css']
 })
 export class CarrersComponent implements OnInit {
+  title : "Pratice" ;
   
   
   searchTerm :string;
@@ -18,7 +20,7 @@ export class CarrersComponent implements OnInit {
   constructor(public ls:LoginService , public ts:TestService) { }
 
   ngOnInit(): void {
-    // this.userName=this.ls.username;
+     this.userName=this.ls.username;
 
   //  getting the data from url
     this.ts.getData().subscribe(

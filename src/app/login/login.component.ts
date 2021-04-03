@@ -12,31 +12,40 @@ export class LoginComponent implements OnInit {
 
   constructor(public rt:Router , public ls:LoginService) { }
 
+  
+
   ngOnInit(): void {
-
-
     this.ls.loginStatus= false;
-    
 
   }
-  doLogin(ref: NgForm)
-  {
+   
+ 
+  
 
-    let username ="abcd"
-    let password ="abcd"
-    let userObj= ref.value;
-    console.log(userObj)
+
+  doLogin(ref: NgForm)
+  { 
+   
+   let username =""
+   let password =""
+       console.log();
+
+  let userObj= (ref.value);
+   console.log(userObj)
 
 
     // verify user credentails
 
     if(userObj.username !== username)
     {
-      alert("invalid username")
+       alert("invalid username")
+      
     }
      else if(userObj.password !== password)
     {
       alert("invalid password")
+    
+
     }
     else
     {
@@ -46,12 +55,13 @@ export class LoginComponent implements OnInit {
        this.ls.loginStatus= true;
        this.ls.username=username;
        
-
-
+     
       // alert("credentals are correct")
       //  alert("logged in successfully")
        //navigate to the targeted component
      this.rt.navigate(["/carrers"])
+    
     }
+    
   }
 }

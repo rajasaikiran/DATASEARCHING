@@ -19,7 +19,9 @@ describe('CarrersComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(CarrersComponent);
+    const app = fixture.componentInstance;
+    expect(CarrersComponent).toBeTruthy();
   });
 });

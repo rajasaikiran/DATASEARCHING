@@ -1,8 +1,18 @@
 <!-- <a class="navbar-brand"><img src="https://dcstatic.com/images/brandcrowd/logos/brandcrowd-logo-5d59400c52.svg" alt=""></a> -->
 
-
 <nav class="navbar navbar-expand-sm navbar-dark bg-info">
-  <a class="navbar-brand"><img src="https://dcstatic.com/images/brandcrowd/logos/brandcrowd-logo-5d59400c52.svg" alt=""></a>
+  <a class="navbar-brand">
+
+   
+    <a href="./home/"> <img src="https://dcstatic.com/images/brandcrowd/logos/brandcrowd-logo-5d59400c52.svg" alt=""></a>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMeu2518_4V9AA7eSKmzAUOtEzzNNnTo6m0g&usqp=CAU"  style="height: 40px; width: 200px;"  alt=""> -->
+    <!-- <img src="https://cdn.worldvectorlogo.com/logos/lorem-lorem.svg" style="width: 200px;" alt=""> -->
+    <!-- <img src="https://cdn.worldvectorlogo.com/logos/blackfire-wordmark-1.svg" style="width: 200px; height: 25px;"  alt=""> -->
+ 
+   
+  
+  
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,7 +29,7 @@
 
       <!-- creating the login and log out  -->
       <li class="nav-item" *ngIf="!ls.loginStatus">
-        <a class="nav-link text-white"  routerLink="login"   routerLinkActive="active">Login</a> 
+        <a class="nav-link text-white"  routerLink="login" routerLinkActive="active">Login</a> 
       </li>
       <li class="nav-item" *ngIf="ls.loginStatus">
         <a class="nav-link text-white"  routerLink="login"   routerLinkActive="active">LogOut</a> 
@@ -36,11 +46,18 @@
       
       <li class="nav-item ">
         <a  class="nav-link text-white"  routerLink="contactus"routerLinkActive="active">ContactUs</a> 
-      </li>
+      </li>   
     </ul>
-    
   </div>
 </nav>
-
 <router-outlet></router-outlet>
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
 

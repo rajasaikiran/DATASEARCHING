@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { RoutingGuard} from './routing.guard'
 
 
+
 const routes: Routes = [
     
   {path:"home", component:HomeComponent},

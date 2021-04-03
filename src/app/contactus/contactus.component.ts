@@ -10,6 +10,10 @@ export class ContactusComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("object is created")
   }
 
+  ngOnDestroy(): void {
+    console.log("object is deleted")
+  }
 }
